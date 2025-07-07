@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aidan Yagoobi | Resume </title>
+        <link rel="stylesheet" type="text/css" href="projects.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>
+                Aidan Yagoobi
+            </h1>
+            <p>Computer Science Graduate from Boston University</p>
+            <p>MIT AI Alignment | Boston University</p>
+            <p> United States | Boston, MA | <a href="https://github.com/aidanyagoobi" target="_blank">
+                 GitHub <img class="github-icon" src="../src/github.png" alt="GitHub Logo">
+                </a> </p>
+        </header>
+        <div id ="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../edu/education.html">Education</a></li>
+                    <li><a href="../emp/employment.html">Employment</a></li>
+                    <li><a href="../pat/patents.html">Patents</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="../ref/references.html">References</a></li>
+                </ul>
+            </nav>
+            <main class="calculator">
+                <h2>Calculator Project</h2>
+                <!--Ensure that there are label tags here for accessibility/ visually impaired-->
+                <div class="calc-inputs">
+                    <label>First Number<input id="one" type="number" placeholder="...""></label>
+                    <label>Second Number<input id="two" type="number" placeholder="..."></label>
+                </div>
+              <!--All the functions necessary linked below-->
+                <div class="calc-buttons">
+                  <button onclick="doAdd()">+</button>
+                  <button onclick="doSub()">−</button>
+                  <button onclick="doMult()">×</button>
+                  <button onclick="doDiv()">÷</button>
+                  <button onclick="doPow()">^</button>
+                  <button onclick="doClear()">Clear</button>
+                </div>
+              
+                <div id="output" class="calc-output">Result will appear here</div>
+              </main>
+        </div>
+            <footer>
+                <p>&#169 Aidan Yagoobi | All Rights Reserved <a href="">Credits</a></p>
+            </footer>
+             <!--Script tag on the bottom-->
+        <script src="projects.js"></script>
+    </body>
+</html>
+

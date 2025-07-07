@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main{
+    flex: 1; /*I use this flex function to take up equal share of the available space in the flex container. This allows me to shrink too if needed!! */
+    flex-direction: column;
+    max-width: 100%;
+    margin-right: 20px; 
+}
+
+main h3 {
+    font-size: calc(16px * 1.5);
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #0077b5; /* LinkedIn blue for section title */
+}
+
+main h4 {
+    margin-left: 10px;
+    color: #333; /* LinkedIn blue for section title */
+}
+
+main p {
+    font-size: calc(16px * 1);
+    color: #333;
+    margin-left: 10px;
+}
+
+img{
+    padding: 10px;
+    width: 30%;
+}
+
+.github-icon {
+    display: inline-block;
+    height: calc(16px * 3.125);   
+    width: calc(16px * 3.125);    
+    vertical-align: middle;   
+    margin-right: 1px;            
+}
+
+.home-icon {
+    display: inline-block;
+    height: calc(16px * 2);       
+    width: auto;                  
+    vertical-align: bottom;       
+    margin-left: 4px;             
+}
+
+/* Default: container lays out horizontally */
+#container {
+   display: flex; 
+   flex: 1;
+}
+
+/* Header styles (default for larger screens) */
+header {
+    background-color: #0077b5;  /* LinkedIn blue */
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 4px; /* This gives a circular looking view */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+/* Header typography and link styling */
+header h1 {
+    font-size: calc(16px * 2.2);
+    font-weight: 700;
+    color: #ffffff; /* white for name */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: calc(16px * 1);
+    color: #e6f0f6; /* soft light blue for secondary text */
+    opacity: 0.95;
+}
+
+header a {
+    color: #ffffff; /* bright white for link */
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header a:hover {
+    color: #cce7f3; /* lighter hover */
+}
+
+
+/* Nav styles (default for larger screens) */
+nav {
+    background-color: #e6f0f6;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0px;
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* default: vertical on larger screens */
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 10px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #0077b5;
+}
+
+/* Footer styles */
+footer {
+    font-size: calc(16px * 0.9);
+    background-color: #0077b5;
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+
+/* For screens smaller than 750px: stack nav on top */
+@media screen and (max-width: 750px) {
+
+    /* Make container vertical */
+    #container {
+        flex-direction: column;
+    }
+
+    /* Remove left margin from main */
+    main { 
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    /* Align header text to center */
+    header {
+        text-align: center;
+    }
+
+    /* Make nav full width */
+    nav {
+        width: 0%;
+        padding: 2px 2px;
+        font-size: 12px;
+        background-color: #ffffff;
+    }
+
+    /* Make nav items horizontal */
+    nav ul {
+        display: flex; 
+        flex-direction: row;
+        align-content: center;
+    }
+
+    /* Adjust spacing of nav items */
+    nav li {
+        margin: 0 2px 0 0;
+    }
+
+    img{
+        width: 100%;
+    }
+}

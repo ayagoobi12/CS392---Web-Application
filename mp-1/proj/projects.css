@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main{
+    flex: 1; 
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.calculator {
+  max-width: 500px;
+  margin: calc(16px * 2) auto;
+  padding: calc(16px * 1.5);
+  background-color: #fefefe;
+  border-radius: calc(16px * 0.5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.calculator h2 {
+  margin-bottom: calc(16px * 1);
+  font-size: calc(16px * 1 + 0.5vw);
+  color: #0077b6;
+}
+
+.calc-inputs {
+  display: flex;
+  gap: calc(16px * 0.2);
+  margin-bottom: calc(16px * 1);
+}
+
+.calc-inputs input {
+  flex: 1;
+  padding: calc(16px * 0.2);
+  font-size: calc(16px * 0.9 + 0.2vw);
+  border: 1px solid #ccc;
+  border-radius: calc(16px * 0.25);
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(16px * 0.5);
+  margin-bottom: calc(16px * 1);
+}
+
+.calc-buttons button {
+  padding: calc(16px * 0.5);
+  font-size: calc(16px * 0.9 + 0.2vw);
+  border: none;
+  border-radius: calc(16px * 0.25);
+  background-color: #0077b6;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calc-buttons button:hover {
+  background-color: #005f8a;
+}
+
+.calc-output {
+  font-size: calc(16px * 1 + 0.3vw);
+  font-weight: bold;
+  min-height: calc(16px * 1.5);
+  color: #333;
+}
+
+#output {
+    text-align: center;
+    font-size: calc(16px * 1.2);
+    min-height: calc(16px * 1.5);
+    padding: calc(16px * 0.5);
+}
+  
+#container {
+    display: flex; 
+    flex: 1; 
+}
+
+header {
+    background-color: #0077b5;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: calc(16px * 2.2);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: calc(16px * 1);
+    color: #e6f0f6;
+    opacity: 0.95;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header a:hover {
+    color: #cce7f3;
+}
+
+nav {
+    background-color: #e6f0f6;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0px;
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 7px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #0077b5;
+}
+
+footer {
+    font-size: calc(16px * 0.9);
+    background-color: #0077b5;
+    margin-left: 20px; 
+    margin-right:20px; 
+}
+
+img{
+    padding: 10px;
+    width: 30%;
+}
+
+.github-icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 1px;
+}
+
+@media screen and (max-width: 750px) {
+
+    #container {
+        flex-direction: column;
+    }
+
+    main { 
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        width: 1vw;
+        padding: 2px 2px;
+        font-size: 12px;
+        background-color: #ffffff;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0 5px 0 0;
+    }
+
+    img{
+        width: 100%;
+    }
+}
