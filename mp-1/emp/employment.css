@@ -29,6 +29,7 @@ main{
     border-radius: 4px;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: #283e4a;
+    height: 100%; 
 }
 
 .employment h2 {
@@ -37,7 +38,6 @@ main{
     margin-bottom: 20px;
     color: #0077b5;
     text-align: center;
-    height: 100%
 }
 
 .job-entry {
