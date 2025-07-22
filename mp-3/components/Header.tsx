@@ -50,7 +50,7 @@ export default function Header() {
       <p>
         United States | Boston, MA |{' '}
         <a href="https://github.com/aidanyagoobi" target="_blank" rel="noopener noreferrer">
-          GitHub <img className="github-icon" src="../imgs/github.png" alt="GitHub Logo" />
+          GitHub <img className="github-icon" src="../public/github.png" alt="GitHub Logo" />
         </a>
       </p>
     </HeaderWrapper>
