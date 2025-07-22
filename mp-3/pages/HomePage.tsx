@@ -14,7 +14,7 @@ export default function HomePage() {
           <section className="home-section">
             <img
               className="profile-pic"
-              src="../public/profilepic.png"
+              src="/profilepic.png"
               alt="Aidan Yagoobi"
             />
             <h3>About Me</h3>
