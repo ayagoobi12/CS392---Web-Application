@@ -1,0 +1,94 @@
+/* Ensure the nav + main fill available space */
+#container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Calculator panel styling */
+  .calculator {
+    max-width: 500px;
+    margin: calc(16px * 2) auto;
+    padding: calc(16px * 1.5);
+    background-color: #fefefe;
+    border-radius: calc(16px * 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  /* Heading */
+  .calculator h2 {
+    margin-bottom: calc(16px * 1);
+    font-size: calc(16px * 1 + 0.5vw);
+    color: #0077b6;
+  }
+  
+  /* Inputs row */
+  .calc-inputs {
+    display: flex;
+    gap: calc(16px * 0.2);
+    margin-bottom: calc(16px * 1);
+  }
+  
+  /* Input fields */
+  .calc-inputs input {
+    flex: 1;
+    padding: calc(16px * 0.2);
+    font-size: calc(16px * 0.9 + 0.2vw);
+    border: 1px solid #ccc;
+    border-radius: calc(16px * 0.25);
+  }
+  
+  /* Buttons grid */
+  .calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(16px * 0.5);
+    margin-bottom: calc(16px * 1);
+  }
+  
+  /* Buttons */
+  .calc-buttons button {
+    padding: calc(16px * 0.5);
+    font-size: calc(16px * 0.9 + 0.2vw);
+    border: none;
+    border-radius: calc(16px * 0.25);
+    background-color: #0077b6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .calc-buttons button:hover {
+    background-color: #005f8a;
+  }
+  
+  /* Result display */
+  .calc-output {
+    font-size: calc(16px * 1 + 0.3vw);
+    font-weight: bold;
+    min-height: calc(16px * 1.5);
+    color: #333;
+  }
+  
+  /* Fallback text styling */
+  #output {
+    text-align: center;
+    font-size: calc(16px * 1.2);
+    min-height: calc(16px * 1.5);
+    padding: calc(16px * 0.5);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 750px) {
+    /* Stack nav and main */
+    #container {
+      flex-direction: column;
+    }
+  
+    /* Center the calculator on small screens */
+    .calculator {
+      margin: calc(16px * 2) 20px;
+    }
+  }
+  

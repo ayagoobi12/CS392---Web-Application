@@ -1,0 +1,63 @@
+/* Section wrapper */
+.employment {
+    margin: 0 20px;
+    background-color: #f3f6f8;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #283e4a;
+    flex: 1; /* ensures it grows to fill height if needed */
+  }
+  
+  /* Section title */
+  .employment h2 {
+    font-size: calc(16px * 1.8);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0077b5;
+    text-align: center;
+  }
+  
+  /* Individual job entry */
+  .job-entry {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Job title */
+  .job-entry h3 {
+    font-size: calc(16px * 1.3);
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Job details */
+  .job-entry p {
+    margin: 2px 0;
+    color: #555;
+    font-size: calc(16px * 0.95);
+  }
+  
+  /* Bullet points under a job */
+  .job-entry ul {
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+  
+  .job-entry li {
+    font-size: calc(16px * 0.95);
+    color: #444;
+    margin-bottom: 5px;
+  }
+  
+  /* Optional: responsiveness on small screens */
+  @media screen and (max-width: 750px) {
+    .employment {
+      margin: 0 20px;
+    }
+  }
+  

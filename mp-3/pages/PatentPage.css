@@ -1,0 +1,68 @@
+
+/* Section wrapper */
+.patents {
+    margin: 0 20px;
+    background-color: #f3f6f8;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #283e4a;
+    flex: 1; /* allows Main to grow and push the footer down */
+    text-align: center;
+  }
+  
+  /* Section title */
+  .patents h2 {
+    font-size: calc(16px * 1.8);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0077b5;
+  }
+  
+  /* Individual patent entry */
+  .patent-entry {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .patent-entry:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Patent heading & link */
+  .patent-entry h3 {
+    font-size: calc(16px * 1.1);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .patent-entry h3 a {
+    text-decoration: none;
+    color: #0077b5;
+    transition: color 0.2s ease;
+  }
+  
+  .patent-entry h3 a:hover {
+    color: #005983;
+    text-decoration: underline;
+  }
+  
+  /* Patent details */
+  .patent-entry p {
+    font-size: calc(16px * 0.95);
+    color: #444;
+    margin: 2px 0;
+  }
+  
+  /* Mobile tweaks */
+  @media screen and (max-width: 750px) {
+    .patents {
+      margin: 0 20px;
+    }
+  }
+  

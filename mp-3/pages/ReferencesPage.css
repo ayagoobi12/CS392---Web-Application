@@ -1,0 +1,57 @@
+/* Section wrapper */
+.references {
+    margin: 0 20px;
+    background-color: #f3f6f8;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #283e4a;
+    flex: 1; /* allows Main to grow and push the footer down */
+    text-align: center;
+  }
+  
+  /* Section title */
+  .references h2 {
+    font-size: calc(16px * 1.8);
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0077b5;
+  }
+  
+  /* Individual reference entry */
+  .reference-entry {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .reference-entry:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Entry heading */
+  .reference-entry h3 {
+    font-size: calc(16px * 1.3);
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Entry paragraphs */
+  .reference-entry p {
+    font-size: calc(16px * 0.95);
+    color: #444;
+    margin: 2px 0;
+  }
+  
+  /* Mobile tweak */
+  @media screen and (max-width: 750px) {
+    .references {
+      margin: 0 20px;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+/* src/pages/HomePage.css */
+
+/* 1. Container around Nav + Main */
+#container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px; /* give some horizontal breathing room */
+  }
+  
+  /* 2. Profile picture on the Home page */
+  .profile-pic {
+    padding: 10px;
+    width: 30%;
+    border-radius: 4px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* …any other resets/layout… */
+  }
+  
+  /* 3. Responsive tweak: make the profile pic full-width on small screens */
+  @media screen and (max-width: 750px) {
+    #container {
+      flex-direction: column;
+    }
+  
+    .profile-pic {
+      width: 100%;
+    }
+  }
+  
