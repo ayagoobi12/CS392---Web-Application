@@ -28,8 +28,12 @@ export default function HolidaysSearchForm() {
   const [year, setYear] = useState('2025');
   const [month, setMonth] = useState('12');
   const [day, setDay] = useState('25');
-
-  const [holidays, setHolidays] = useState<any[]>([]);
+  type Holiday = {
+    name: string;
+    location: string;
+  };
+  
+  const [holidays, setHolidays] = useState<Holiday[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
