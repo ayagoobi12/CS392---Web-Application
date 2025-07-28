@@ -14,7 +14,7 @@ export default function AboutPage() {
         </p>
 
         <Link
-          href="/holidays"
+          href="/"
           className="inline-block mt-6 text-blue-400 hover:text-blue-300 underline transition"
         >
           ← Back to Global Holiday Finder
